@@ -1,0 +1,86 @@
+body{
+  font-family: 'Nova Round', cursive;
+}
+
+.margin{
+   margin: 0px 90px;
+}
+.jumbotron-fluid{
+  background-color: tomato;
+  color: white;
+  border-top-left-radius: 5% 50%;
+  
+}
+
+.space{
+  padding-left: 4vw;
+}
+
+i{
+  padding: 0px 15px;
+}
+
+.accordion{
+  background-color: salmon;
+}
+
+section{
+  background-color: lightsalmon;
+  padding: 0px 50px;
+  color: white;
+  font-family: 'Nova Round', cursive;
+}section i{
+  padding: 10px;
+  padding-bottom: 20px;
+}.fa-ticket-alt{
+  padding-top: 30px;
+  padding-bottom: 23px;
+}
+
+.fa-arrow-left{
+  position: relative;
+  left: 20px;
+  top: 15px;
+}
+
+span{
+  position: relative;
+  left: 20px;
+  top: 7px;
+  font-size: 30px;
+  margin-bottom: 0px;
+}
+
+.ingredients{
+  position: relative;
+  left: 27vh;
+}
+
+#movieDiv{
+  border-top-left-radius: 5% 50%;
+  border-bottom-left-radius: 5% 50%;
+}
+
+.fas fa-utensils fa-7x{
+  cursor: pointer;
+  display:block;
+  
+}
+
+.fas fa-utensils fa-7x:hover{
+  background-color: #ffcc99;
+}
+
+.auxRow{
+    background-color: coral;
+    border-top-left-radius: 5% 50%;
+    border-bottom-left-radius: 5% 50%;
+    margin-top: 20px;
+    padding: 10%;
+  }
+  
+.btn{
+  color: white;
+}.btn:hover{
+  color: tomato;
+}
