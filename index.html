@@ -18,7 +18,7 @@
 <title>Netflix & Recipes</title>
   
 <!--  Header Jumbotron w/Icons -->
-  <div class="jumbotron jumbotron-fluid margin">
+  <div class="headJumbotron jumbotron-fluid margin">
   <div class="container">
     <div class="row">
       <div class="col-5">
@@ -35,45 +35,63 @@
   </div>
 </div>
 <!-- Sub-Jumbotron -->
-<div class="jumbotron jumbotron-fluid margin" style="background-color: salmon; border-bottom-left-radius: 5% 50%;  border-top-left-radius: 0px;">
+<div class="subJumbotron jumbotron-fluid margin">
   <div class="container">
     <p class="lead space">
     Here to solve the age old question of what to eat, and what to watch
     </p>
-  </div>
+    </div>
 </div>
-
+<!--BUTTON TO CLICK BOTH DINNER AND MOVIE BUTTONS AT THE SAME TIME    -->
+  <hr>
+  <div class="container">
+    <div class="row">
+      <div id="eveningBtn">Eat & Watch</div>
+    </div>
+    </div>
+  <hr>
+  
   <br>
   
 <!-- Movie And Recipe Containers -->
-<div class="row">
+<div class="margin mainContainer">
   <!--  Movie Div  -->
-  <div class="col-6">
-      <section class="div" id="movieDiv" style="margin-left: 90px">
-          <button class="btn spin" id="movieBtn">
-            <i class="fas fa-ticket-alt fa-7x"></i>
-          </button>
-          <i class="fas fa-arrow-left fa-3x"></i>
+  <div class="subContainer">
+      <section id="movieDiv">
+          <div class="btn spin" id="movieBtn">
+            <i class="fas fa-ticket-alt fa-7x"><h3>
+              Movie
+              </h3></i>
+          </div>
+          <!-- <i class="fas fa-arrow-left fa-3x"></i> -->
         <br>
-        <!--  <video id=trailer width="320" height="240" controls>
-          <source src="movie.mp4" type="video/mp4">
-          <source src="movie.ogg" type="video/ogg">
-        Your browser does not support the video tag.
-        </video>  -->
+  
+              <div id="movieResult"> </div>
+        <br>
+                      <div id="movieimg"> </div>
+
+
       </section>
     </div>
   <!--  Recipe Div  -->
-  <div class="col-6">
-    <section class="div" id="recipeDiv" style="margin-right: 90px">
+  <div class="subContainer">
+    <section id="recipeDiv">
       <br>
-      <button class="btn spin" id="recipeBtn">
-        <i class="fas fa-utensils fa-7x"></i>
-      </button>
-      <br>
-      <div id="movieResult"> </div>
-        <i class="fas fa-arrow-left fa-3x"></i>
-      <button class="btn ingredients" data-toggle="popover" data-placement="bottom" data-content="TEST CONTENT 123">
-        <i class="far fa-list-alt fa-5x"></i>
+      <div class="btn spin" id="recipeBtn">
+        <i class="fas fa-utensils fa-7x"><h3>
+          Dinner
+          </h3></i>
+      </div>
+        <!-- <i class="fas fa-arrow-left fa-3x"></i> -->
+        <button class="btn ingredients" 
+                      data-toggle="popover" 
+                      data-placement="bottom"
+                      data-trigger="focus"
+                      data-title="Here's What You'll Need:"
+                      data-content="">        
+          <i class="far fa-list-alt fa-5x">
+            <br> <span>ingredients</span>
+          </i>
       </button>
       <br>
       <div id="recipeResult"> </div>
@@ -84,17 +102,15 @@
 </div>
     
   
-<div class="row auxRow margin">
-  <div>
 
-  </div>
 
-</div>
+     
+
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="script.js"></script>
- 
+<!--     <script src="https://apis.google.com/js/api.js"></script> -->
 </body>
 </html>

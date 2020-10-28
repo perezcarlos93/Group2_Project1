@@ -1,86 +1,181 @@
-body{
-  font-family: 'Nova Round', cursive;
-}
+/* DESKTOP STYLING */
+@media all and (min-width: 500px){ 
+    body{
+    font-family: 'Nova Round', cursive;
+    }
 
-.margin{
-   margin: 0px 90px;
+    .margin{
+      margin: 0vh 2vh;
+    }
+
+    /* Jumbotron + Sub-Jumbotron Headers */
+    .headJumbotron{
+        background-color: tomato;
+        color: white;
+        border-top-left-radius: 5% 25%;
+        padding: 10vh 0vh;   
+    }
+    .subJumbotron{
+        background-color: salmon;
+        color: white; 
+        border-bottom-left-radius: 5% 50%;  
+        border-top-left-radius: 0px;
+        padding: 7vh 0vh;   
+    }
+    .space{
+    padding-left: 4vw;
+    }
+    i{
+        padding: 0px 15px;
+    }
+    .mainContainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }.subContainer{
+        width: 49%;
+    }
+
+    /* Eat & Watch Button */
+    #eveningBtn{
+        background-color:coral;
+        padding:2%;
+        align-items:center;
+        text-align:center;
+        width:100%;
+        border-radius:25px;
+        cursor:pointer;
+        font-family: 'Nova Round', cursive;
+        color:white;
+        display:block;
+    }
+    #eveningBtn:hover{
+        background-color:tomato;
+    }
+    
+    /* Main Section */
+    section{
+        background-color: lightsalmon;
+        padding: 5px 6vh;
+        color: white;
+        font-family: 'Nova Round', cursive;
+    }section i{ 
+        padding-bottom: 20px;
+    }.fa-ticket-alt{
+        padding-top: 30px;
+        padding-bottom: 23px;
+    }.fa-utensils{
+        position: relative;
+        bottom: 1rem;
+        padding-top: 30px;
+        padding-bottom: 23px;
+    }.ingredients{
+        position: relative;
+        left: 15rem;
+    }
+
+    img{
+        text-align: center;
+        display: block;
+        max-width: 100%;
+        height: auto;
+        padding-bottom: 5rem;
+    }
+
+    span{
+     font-size: 50%;
+    }
+
+    #movieDiv{
+        border-top-left-radius: 12% 15%;
+        border-bottom-left-radius: 12% 15%;
+    }
+
+
+    .fas fa-utensils fa-7x{
+        cursor: pointer;
+        display:block;
+    }
+
+    .fas fa-utensils fa-7x:hover{
+        background-color: #ffcc99;
+    }
+
+    .btn{
+    color: white;
+    }.btn:hover{
+    color: tomato;
+    }
+
 }
-.jumbotron-fluid{
-  background-color: tomato;
-  color: white;
-  border-top-left-radius: 5% 50%;
   
-}
+/* MOBILE STYLING */
 
-.space{
-  padding-left: 4vw;
-}
+  @media all and (max-width: 500px){
+    .headJumbotron{
+        background-color: tomato;
+        color: white;
+        padding: 3vh 1vh;
+        border-top-left-radius: 10% 5%;
+        margin-bottom: 0;
+    }
+    .subJumbotron{
+        background-color: salmon;
+        color: white;
+        padding: 3vh 1vh;
+        border-bottom-left-radius: 5% 10%;  
+        border-top-left-radius: 0px;
+    }
 
-i{
-  padding: 0px 15px;
-}
+    
+    #eveningBtn{
+        background-color:coral;
+        padding:2%;
+        align-items:center;
+        text-align:center;
+        width:100%;
+        border-radius:25px;
+        cursor:pointer;
+        font-family: 'Nova Round', cursive;
+        color:white;
+        display:block;
+        
+    }
+    #eveningBtn:hover{
+        background-color:tomato;
+    }
+    
+    .mainContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    section{
+        background-color: lightsalmon;
+        color: white;
+        font-family: 'Nova Round', cursive;
+        padding: 2vh 2vh;
+        max-width: 100%;
+    }
+    #movieDiv{
+        border-top-left-radius: 10% 3%;
+    }
+    #recipeDiv{
+        border-bottom-left-radius: 10% 3%;
+    }
 
-.accordion{
-  background-color: salmon;
-}
+    img{
+        max-width: 100%;
+        padding-bottom: 8vh;
+    }
+    span{
+        font-size: 50%;
+       }
 
-section{
-  background-color: lightsalmon;
-  padding: 0px 50px;
-  color: white;
-  font-family: 'Nova Round', cursive;
-}section i{
-  padding: 10px;
-  padding-bottom: 20px;
-}.fa-ticket-alt{
-  padding-top: 30px;
-  padding-bottom: 23px;
-}
+    .btn{
+        color: white;
+        }.btn:hover{
+        color: tomato;
+        }
 
-.fa-arrow-left{
-  position: relative;
-  left: 20px;
-  top: 15px;
-}
-
-span{
-  position: relative;
-  left: 20px;
-  top: 7px;
-  font-size: 30px;
-  margin-bottom: 0px;
-}
-
-.ingredients{
-  position: relative;
-  left: 27vh;
-}
-
-#movieDiv{
-  border-top-left-radius: 5% 50%;
-  border-bottom-left-radius: 5% 50%;
-}
-
-.fas fa-utensils fa-7x{
-  cursor: pointer;
-  display:block;
-  
-}
-
-.fas fa-utensils fa-7x:hover{
-  background-color: #ffcc99;
-}
-
-.auxRow{
-    background-color: coral;
-    border-top-left-radius: 5% 50%;
-    border-bottom-left-radius: 5% 50%;
-    margin-top: 20px;
-    padding: 10%;
   }
-  
-.btn{
-  color: white;
-}.btn:hover{
-  color: tomato;
-}
